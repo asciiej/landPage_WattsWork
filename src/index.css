@@ -9,10 +9,13 @@
 
   :root {
     --cor-azul: #324498;
+    --cor-azul-clara: #364EB9;
+    --cor-azul-vibrante: #223DB6;
     --cor-amarelo: #F4D35E;
     --cor-amerelo-escuro:  #e0a800; /*Usado para o hover no botão do banner*/
     --cor-cinza: #D9D9D9;
     --cor-offwhite: #F6F6F6;
     /*Azul com 65% de tranparencia*/
     --cor-azul-translucido-65:  rgba(27, 35, 87, 0.65);
+    --cor-cinza-azulado--claro: #E0E8F9;
   }

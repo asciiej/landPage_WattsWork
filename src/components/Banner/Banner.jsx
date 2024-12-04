@@ -13,9 +13,9 @@ import { EffectFade, Autoplay } from 'swiper';
 import './Banner.css';
 
 // Importa imagens
-import image1 from '../../img/banner-img1.png';
-import image2 from '../../img/banner-img2.png';
-import image3 from '../../img/banner-img3.png';
+import image1 from '../../img/img-banner/banner-img1.png';
+import image2 from '../../img/img-banner/banner-img2.png';
+import image3 from '../../img/img-banner/banner-img3.png';
 
 // Registra o Swiper (necessário para Swiper/Element)
 register();
@@ -29,7 +29,7 @@ function Banner() {
     ];
 
     return (
-        <div className="container">
+        <div className="container-banner">
             
             <Swiper
                 slidesPerView={1}
@@ -51,12 +51,12 @@ function Banner() {
                                 className={`slide-item ${item.focus ? item.focus.split(" ")[0] + "-focus" : ""}`}
                             />
                             
-                            <div className="text-overlay">
-                                <h2 className="text">O <span className="corDiferente">poder do sol</span> ao seu alcance <br/> com a Wattworks Energia <br/>Inteligente!</h2>
-                                <p className="subtext">Instalação de sistemas on-grid e off-grid gerando redução <br/> no consumo de energia e segurança energética.</p>
-                                <div className="buttons">
-                                    <button className="btn-primary">Entre em contato</button>
-                                    <button className="btn-secondary">Nossas soluções</button>
+                            <div className="texto-sobreposto-banner">
+                                <h1 className="titulo-banner">O <span className="corDiferente">poder do sol</span> ao seu alcance <br/> com a Wattworks Energia <br/>Inteligente!</h1>
+                                <p className="subtexto-banner">Instalação de sistemas on-grid e off-grid gerando redução <br/> no consumo de energia e segurança energética.</p>
+                                <div className="buttons-banner">
+                                    <button className="btn-primary-banner">Entre em contato</button>
+                                    <button className="btn-secondary-banner">Nossas soluções</button>
                                 </div>
                             </div>
                         </div>

@@ -27,7 +27,7 @@
 
 /*Configura o texto no slide*/
 
-.text-overlay {
+.texto-sobreposto-banner {
     position: absolute;
     top: -4px;
     left:0;
@@ -43,24 +43,24 @@
 
 }
 
-.corDiferente{
+.titulo-banner span{
     color: var(--cor-amarelo);
 }
 
-.text {
+.titulo-banner {
     font-size: 48px;
     font-weight: bold;
     font-family: "Lexend", sans-serif;
 }
 
-.subtext {
+.subtexto-banner {
     font-size: 24px;
     margin: 21px 0;
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
 
-.buttons {
+.buttons-banner {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -79,35 +79,35 @@ button {
     height: 60.53px;
 }
 
-.btn-primary {
+.btn-primary-banner {
     background-color: #ffffff;
     color: var(--cor-azul);
 }
 
-.btn-primary:hover {
+.btn-primary-banner:hover {
     background-color: var(--cor-cinza);
 }
 
-.btn-secondary {
+.btn-secondary-banner {
     background-color: var(--cor-amarelo);
     color: var(--cor-azul);
 }
 
-.btn-secondary:hover {
+.btn-secondary-banner:hover {
     background-color: var(--cor-amerelo-escuro);
 }
 
 @media (max-width: 600px) {
 
-    .text-overlay {
+    .texto-sobreposto-banner {
         padding: 0 36px;
     }
 
-    .text{
+    .titulo-banner{
         font-size: 36px;
     }
 
-    .subtext{
+    .subtexto-banner{
         font-size: 16px;
     }
 
@@ -115,11 +115,11 @@ button {
         margin-bottom: 20px;
     }
 
-    .buttons{
+    .buttons-banner{
         flex-direction: column;
     }
 
-    br {
+    .texto-sobreposto-banner br {
         display: none;
     }
 }
