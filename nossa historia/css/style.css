@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .nossa-historia {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .img-maior {
+    width: 554px;
+    height: 399px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #ddd;
+  }
+  
+  .img-menor {
+    width: 554px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #ddd;
+  }
+  
+  .conteudo {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .texto-historia {
+    color: #364EB9; /* Cor específica para "História" */
+  }
+  
+  .texto-azul {
+    color: #223DB6; /* Azul para outros textos */
+  }
+  
+  .primeiro-h2 {
+    font-family: 'Lexend', sans-serif; /* Fonte específica */
+    font-size: 28px;
+    color: #000000;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px 0 5px;
+    color: #223DB6;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nossa-historia {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imagens {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .img-maior, .img-menor {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
