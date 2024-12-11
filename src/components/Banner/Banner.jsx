@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { EffectFade, Autoplay } from 'swiper';
-import './Banner.css';
+import styles from './Banner.module.css'; // Importando o CSS Module
 import image1 from '../../img/img-banner/banner-img1.png';
 import image2 from '../../img/img-banner/banner-img2.png';
 import image3 from '../../img/img-banner/banner-img3.png';
@@ -22,7 +22,7 @@ function Banner() {
     ];
 
     return (
-        <div className="container-banner">
+        <div className={styles.containerBanner}>
             <Swiper
                 slidesPerView={1}
                 pagination={{ clickable: true }}
@@ -35,24 +35,31 @@ function Banner() {
             >
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="slide-content">
+                        <div className={styles.slideContent}>
                             <img
                                 src={item.img}
                                 alt={`Slide ${item.id}`}
-                                className={`slide-item ${item.focus ? item.focus.split(" ")[0] + "-focus" : ""}`}
+                                className={`${styles.slideItem} ${item.focus ? styles[`${item.focus.split(" ")[0]}Focus`] : ""}`}
                             />
-                            <div className="texto-sobreposto-banner">
-                                <h1 className="titulo-banner">O <span className="corDiferente">poder do sol</span> ao seu alcance <br/> com a Wattworks Energia <br/>Inteligente!</h1>
-                                <p className="subtexto-banner">Instalação de sistemas on-grid e off-grid gerando redução <br/> no consumo de energia e segurança energética.</p>
-                                <div className="buttons-banner">
-                                    <button className="btn-primary-banner">Entre em contato</button>
+                            <div className={styles.textoSobrepostoBanner}>
+                                <h1 className={styles.tituloBanner}>O <span className={styles.corDiferente}>poder do sol</span> ao seu alcance <br/> com a Wattworks Energia <br/>Inteligente!</h1>
+                                <p className={styles.subtextoBanner}>Instalação de sistemas on-grid e off-grid gerando redução <br/> no consumo de energia e segurança energética.</p>
+                                <div className={styles.buttonsBanner}>
 
-                                    {/* Link para o componente NossasSolucoes */}
+                                    <Link
+                                        to="###"  // ID do destino no componente NossasSolucoes
+                                        smooth={true}  // Ativa o efeito de scroll suave
+                                        duration={500}  // Duração do efeito (em ms)
+                                        className={styles.btnPrimaryBanner}
+                                    >
+                                        Entre em contato
+                                    </Link>
+
                                     <Link
                                         to="nossas-solucoes"  // ID do destino no componente NossasSolucoes
                                         smooth={true}  // Ativa o efeito de scroll suave
                                         duration={500}  // Duração do efeito (em ms)
-                                        className="btn-secondary-banner"
+                                        className={styles.btnSecondaryBanner}
                                     >
                                         Nossas soluções
                                     </Link>

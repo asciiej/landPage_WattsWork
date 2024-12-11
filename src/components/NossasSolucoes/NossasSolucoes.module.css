@@ -46,11 +46,11 @@
 }
 
 .offgrid {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/NossasSolucoes/Offgrid.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/img-nossasSolucoes/Offgrid.png);
 }
 
 .ongrid {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/NossasSolucoes/Ongrid.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/img-nossasSolucoes/Ongrid.png);
 }
 
 .cardsPrincipais:hover {
@@ -114,21 +114,20 @@
     height: 64px;
 }
 
-.botao {
+.containerBotao {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
+    width: 100%;
 }
 
-.botao button {
+.botao {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: var(--cor-azul-vibrante);
-    width: 100%;
-    max-width: 395px;
+    width: 395px;
     height: 61px;
     border-radius: 36px;
     background-color: var(--cor-amarelo);
@@ -140,7 +139,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.botao button:hover {
+.botao:hover {
     background-color: var(--cor-amerelo-escuro);
 }
 
@@ -148,6 +147,8 @@
     width: 47px;
     height: 36px;
 }
+
+
 
 @media (max-width: 1024px) {
     .container {
@@ -218,7 +219,8 @@
         height: 48px;
     }
 
-    .botao button {
+    .botao {
         font-size: 18px;
     }
 }
+

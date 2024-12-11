@@ -1,26 +1,29 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/autoplay';
 import styles from './NossasSolucoes.module.css';
 
-import seta from '../../img/NossasSolucoes/seta.png';
+//importa imagem seta dos cards principais
+import seta from '../../img/img-nossasSolucoes/seta.png';
 
 // Importa imagens ícones
-import usinas from '../../img/NossasSolucoes/UsinasSolares.png';
-import GD from '../../img/NossasSolucoes/GD.png';
-import mercado from '../../img/NossasSolucoes/mercadoLivre.png';
-import agro from '../../img/NossasSolucoes/agronegócio.png';
-import financiamento from '../../img/NossasSolucoes/financiamento.png';
-import planos from '../../img/NossasSolucoes/planos.png';
-import investimento from '../../img/NossasSolucoes/investimento.png';
-import exclusivos from '../../img/NossasSolucoes/exclusivos.png';
+import usinas from '../../img/img-nossasSolucoes/UsinasSolares.png';
+import GD from '../../img/img-nossasSolucoes/GD.png';
+import mercado from '../../img/img-nossasSolucoes/mercadoLivre.png';
+import agro from '../../img/img-nossasSolucoes/agronegócio.png';
+import financiamento from '../../img/img-nossasSolucoes/financiamento.png';
+import planos from '../../img/img-nossasSolucoes/planos.png';
+import investimento from '../../img/img-nossasSolucoes/investimento.png';
+import exclusivos from '../../img/img-nossasSolucoes/exclusivos.png';
 
 // Importa imagem da seta do botão
-import setaBotao from '../../img/NossasSolucoes/setaBotao.png';
+import setaBotao from '../../img/img-nossasSolucoes/setaBotao.png';
 
 function NossasSolucoes() {
   const [isMobile, setIsMobile] = useState(false);
-  const [slidesPerView, setSlidesPerView] = useState(1); // Estado para armazenar a quantidade de slides visíveis
+  const [slidesPerView, setSlidesPerView] = useState(1); 
 
   const solutions = [
     { id: 1, img: usinas, text: 'Usinas solares para auto consumo' },
@@ -87,14 +90,14 @@ function NossasSolucoes() {
 
       {isMobile ? (
         <Swiper
-          slidesPerView={slidesPerView}   // Quantidade de slides visíveis proporcional ao tamanho da tela
-          centeredSlides={true}            // Centraliza o slide ativo
-          spaceBetween={10}                // Espaço entre os slides
-          loop={true}                         // Habilita o loop
-          autoplay={{                      // Configura o autoplay
-          delay: 3000,                   // Define o tempo de delay entre as transições de slide (3000ms = 3 segundos)
-          disableOnInteraction: false,   // Permite que o autoplay continue mesmo após interação do usuário
-  }}                  // Habilita o loop
+          slidesPerView={slidesPerView}   
+          centeredSlides={true}            
+          spaceBetween={10}                
+          loop={true}                         
+          autoplay={{                      
+          delay: 3000,                   
+          disableOnInteraction: false,   
+  }}                  
         >
           {solutions.map((solution) => (
             <SwiperSlide key={solution.id}>
@@ -116,13 +119,23 @@ function NossasSolucoes() {
         </div>
       )}
 
-      <div className={styles.botao}>
-        <button>
+      <div className={styles.containerBotao}>
+        <Link
+          to="###" // ID do destino no componente NossasSolucoes
+          smooth={true} // Ativa o efeito de scroll suave
+          duration={500} // Duração do efeito (em ms)
+          className={styles.botao}
+        >
           Seja nosso cliente
           <img src={setaBotao} alt="Botão" />
-        </button>
+        </Link>
       </div>
+
+
     </div>
+
+    
+    
   );
 }
 

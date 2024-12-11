@@ -1,0 +1,153 @@
+.containerBeneficios {
+    margin: 88px 0;
+}
+
+.tituloBeneficios {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+.tituloBeneficios span {
+    color: var(--cor-azul-clara);
+}
+
+.gridBeneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 564px);
+    grid-template-rows: repeat(2, 230px);
+    gap: 20px 25px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.cardBeneficio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--cor-cinza-azulado--claro);
+    border-radius: 16px;
+    flex-direction: row-reverse;
+}
+
+.cardBeneficio h3 {
+    font-family: "Lexend", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-azul-vibrante);
+    margin-bottom: 13px;
+}
+
+.cardBeneficio p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.cardBeneficio img {
+    height: 96px;
+    width: 88px;
+    margin-left: 45px;
+}
+
+.textoBeneficio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px;
+}
+
+.containerBeneficios h4 {
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px) { 
+    .gridBeneficios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .cardBeneficio {
+        flex-direction: column-reverse; 
+        align-items: center;
+        text-align: center;
+        padding: 31px 24px;
+    }
+
+    .cardBeneficio img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 80px; 
+        height: 90px;
+    }
+
+    .containerBeneficios {
+        margin: 64px 36px;
+    }
+
+    .tituloBeneficios {
+        font-size: 28px;
+    }
+
+    .cardBeneficio h3 {
+        font-size: 24px; 
+    }
+
+    .cardBeneficio p {
+        font-size: 16px; 
+    }
+
+    .textoBeneficio {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridBeneficios {
+        grid-template-columns: 100%; 
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .cardBeneficio {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 31px 24px;
+    }
+
+    .cardBeneficio img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 48px;
+        height: 52.36px;
+    }
+
+    .containerBeneficios {
+        margin: 64px 36px;
+    }
+
+    .tituloBeneficios {
+        font-size: 24px; 
+    }
+
+    .cardBeneficio h3 {
+        font-size: 24px;
+    }
+
+    .cardBeneficio p {
+        font-size: 16px;
+    }
+
+    .containerBeneficios h4 {
+        font-size: 24px;
+    }
+
+    .textoBeneficio {
+        margin: 0;
+    }
+}
