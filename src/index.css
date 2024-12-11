@@ -18,7 +18,9 @@
     /*Azul com 65% de tranparencia*/
     --cor-azul-translucido-65:  rgba(27, 35, 87, 0.65);
     --cor-cinza-azulado--claro: #E0E8F9;
-    --cor-branco-cinza: #F3F4F5
+
+
+    --cor-branco-cinza: #F3F4F5;
 
     /* Fontes */
     --fonte-principal: "Inter", sans-serif;
