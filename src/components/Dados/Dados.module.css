@@ -11,7 +11,7 @@
 
 .dado {
     color: white;
-    font-family: var(--fonte-principal);
+    font-family: 'inter', sans-serif;
 }
 
 .textoEncima {
