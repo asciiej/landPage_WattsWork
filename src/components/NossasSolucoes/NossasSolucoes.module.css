@@ -1,22 +1,22 @@
 .container {
     padding: 88px 118px;
-    background-color: var(--cor-branco-cinza);
+    background-color: var(--cor-cinza-claro);
 }
 
 .container header h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
 .container header p {
-    font-family: "Lexend", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 28px;
 }
 
 .container header h2 span {
-    color: var(--cor-azul-clara);
+    color: var(--cor-azul-claro);
 }
 
 .container header p span {
@@ -71,14 +71,14 @@
 }
 
 .cardsPrincipaisTexto h3 {
-    font-family: "Lexend", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
 .cardsPrincipaisTexto p {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 20px;
 }
 
@@ -97,7 +97,7 @@
     background-color: var(--cor-azul);
     padding: 24px 36px;
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-principal);
     color: white;
     font-weight: 300;
     display: flex;
@@ -123,7 +123,7 @@
 
 .botao {
     display: flex;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 24px;
     font-weight: bold;
     color: var(--cor-azul-vibrante);
@@ -140,7 +140,7 @@
 }
 
 .botao:hover {
-    background-color: var(--cor-amerelo-escuro);
+    background-color: var(--cor-amarelo-escuro);
 }
 
 .botao img {

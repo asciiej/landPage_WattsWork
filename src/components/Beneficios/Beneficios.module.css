@@ -3,7 +3,7 @@
 }
 
 .tituloBeneficios {
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 0.08em;
@@ -11,7 +11,7 @@
 }
 
 .tituloBeneficios span {
-    color: var(--cor-azul-clara);
+    color: var(--cor-azul-claro);
 }
 
 .gridBeneficios {
@@ -27,13 +27,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--cor-cinza-azulado--claro);
+    border: 1px solid var(--cor-cinza-azulado-claro);
     border-radius: 16px;
     flex-direction: row-reverse;
 }
 
 .cardBeneficio h3 {
-    font-family: "Lexend", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: bold;
     color: var(--cor-azul-vibrante);
@@ -41,7 +41,7 @@
 }
 
 .cardBeneficio p {
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 16px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .containerBeneficios h4 {
-    font-family: "Lexend", sans-serif;
+    font-family: var(--fonte-secundaria);
     text-align: center;
     font-size: 28px;
     font-weight: normal;

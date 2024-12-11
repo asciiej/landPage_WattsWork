@@ -11,7 +11,8 @@ root.render(
   <React.StrictMode>
     <Banner />
     <Beneficios />
-    <Dados />
     <NossasSolucoes />
+    <Dados />
+    <NossaHistoria />
   </React.StrictMode>
 );
