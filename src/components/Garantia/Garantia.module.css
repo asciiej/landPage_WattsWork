@@ -1,0 +1,124 @@
+.garantiaContainer {
+    background-color: #002f6e; /* Fundo azul */
+    background-image: url('../../img/img-garantia/fundo.png'); /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    color: #ffffff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 60px 20px; /* Espaçamento interno */
+    display: flex; /* Flexbox para centralizar */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.garantiaContainer h2 {
+    font-family: var(--fonte-principal);
+    font-size: 2.8rem; /* Tamanho maior do título */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.garantiaContainer h2 span {
+    font-family: var(--fonte-principal);
+    color: #ffd700; /* Destaque em amarelo */
+}
+
+.garantiaContainer h3 {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.2rem; /* Subtítulo menor */
+    font-weight: normal;
+    margin-bottom: 40px; /* Espaçamento abaixo do subtítulo */
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Mais espaço entre os cartões */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    max-width: 1200px; /* Limita a largura total */
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para uniformidade */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito hover */
+}
+
+.icon {
+    width: 100px; /* Ícones maiores */
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem; /* Tamanho do título do card */
+    color: #ffd700; /* Destaque em amarelo */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: var(--fonte-principal);
+    font-size: 1rem; /* Texto maior para melhor leitura */
+    line-height: 1.5;
+    margin: 0;
+}
+/* MEDIA QUERIES - Ajustes para telas menores */
+@media (max-width: 768px) {
+    .garantiaContainer {
+        padding: 40px 10px; /* Reduz o espaçamento */
+    }
+
+    .garantiaContainer h2 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .garantiaContainer h3 {
+        font-size: 1.5rem; /* Reduz o tamanho do subtítulo */
+        margin-bottom: 20px;
+    }
+
+    .cardsContainer {
+        flex-direction: column; /* Empilha os cartões verticalmente */
+        gap: 30px; /* Menor espaçamento entre os cartões */
+    }
+
+    .card {
+        width: 90%; /* Ocupa quase toda a largura da tela */
+        max-width: 350px; /* Define um limite para a largura */
+        margin: 0 auto; /* Centraliza os cartões */
+    }
+
+    .icon {
+        width: 80px; /* Ícones menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .garantiaContainer h2 {
+        font-size: 1.8rem; /* Título menor */
+    }
+
+    .garantiaContainer h3 {
+        font-size: 1.3rem; /* Subtítulo menor */
+    }
+
+    .card {
+        width: 95%; /* Garante mais aproveitamento da tela */
+    }
+
+    .icon {
+        width: 70px; /* Reduz tamanho do ícone */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+}
