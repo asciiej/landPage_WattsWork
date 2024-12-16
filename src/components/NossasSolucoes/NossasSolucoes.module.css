@@ -1,0 +1,226 @@
+.container {
+    padding: 88px 118px;
+    background-color: var(--cor-cinza-claro);
+}
+
+.container header h2 {
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.container header p {
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+}
+
+.container header h2 span {
+    color: var(--cor-azul-claro);
+}
+
+.container header p span {
+    color: var(--cor-azul-vibrante);
+}
+
+.containerCardsPrincipais {
+    margin: 48px 0;
+    display: flex;
+    gap: 48px;
+}
+
+.cardsPrincipais {
+    width: 100%;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offgrid {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/img-nossasSolucoes/Offgrid.png);
+}
+
+.ongrid {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--cor-azul) 80%), url(../../img/img-nossasSolucoes/Ongrid.png);
+}
+
+.cardsPrincipais:hover {
+    transform: scale(1.05);
+}
+
+.cardsPrincipais .seta {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+.cardsPrincipaisTexto {
+    padding: 12px;
+    color: white;
+}
+
+.cardsPrincipaisTexto h3 {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cardsPrincipaisTexto p {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+.containerSlider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.sliderItem {
+    width: 372px;
+    height: 148px;
+    border-radius: 16px;
+    background-color: var(--cor-azul);
+    padding: 24px 36px;
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sliderItem span {
+    font-weight: bold;
+}
+
+.sliderItem img {
+    width: 64px;
+    height: 64px;
+}
+
+.containerBotao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao {
+    display: flex;
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-azul-vibrante);
+    width: 395px;
+    height: 61px;
+    border-radius: 36px;
+    background-color: var(--cor-amarelo);
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor-amarelo-escuro);
+}
+
+.botao img {
+    width: 47px;
+    height: 36px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+
+    .container header {
+        padding: 64px 36px 48px;
+    }
+    
+    .container header p {
+        font-size: 24px;
+    }
+
+    .containerCardsPrincipais {
+        flex-direction: column;
+        padding: 0 36px 64px;
+        margin: 0;
+    }
+
+    .sliderItem {
+        width: auto;
+    }
+
+    .botao {
+        margin: 48px 36px 64px;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container header h2, .container header p {
+        text-align: center;
+    }
+
+    .containerCardsPrincipais {
+        flex-direction: column;
+    }
+
+    .cardsPrincipais {
+        height: 356px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardsPrincipaisTexto h3 {
+        font-size: 20px;
+    }
+
+    .cardsPrincipaisTexto p {
+        font-size: 16px;
+    }
+
+    .sliderItem {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sliderItem p {
+        font-size: 16px;
+    }
+
+    .sliderItem img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .botao {
+        font-size: 18px;
+    }
+}
+
