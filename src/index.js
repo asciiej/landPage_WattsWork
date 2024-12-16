@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'; // Caminho para o componente Ba
 import Beneficios from './components/Beneficios/Beneficios';
 import Dados from './components/Dados/Dados';
 import NossaHistoria from './components/NossaHistoria/NossaHistoria'
+import Garantia from './components/Garantia/Garantia'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,5 +14,6 @@ root.render(
     <Beneficios />
     <Dados />
     <NossaHistoria />
+    <Garantia />
   </React.StrictMode>
 );

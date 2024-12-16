@@ -15,9 +15,10 @@
 
 .garantiaContainer h2 {
     font-family: var(--fonte-principal);
-    font-size: 2.8rem; /* Tamanho maior do título */
+    font-size: 32px; /* Tamanho maior do título */
     font-weight: bold;
     margin-bottom: 15px;
+    letter-spacing: 8%;
 }
 
 .garantiaContainer h2 span {
@@ -27,7 +28,7 @@
 
 .garantiaContainer h3 {
     font-family: var(--fonte-secundaria);
-    font-size: 2.2rem; /* Subtítulo menor */
+    font-size: 24PX; /* Subtítulo menor */
     font-weight: normal;
     margin-bottom: 40px; /* Espaçamento abaixo do subtítulo */
 }
