@@ -6,7 +6,7 @@ const Rodape = () => {
     <footer className="footer">
       <div className="footer-content">
         <img 
-          src="../../img/img-rodape//logo_rodape.png" 
+          src="../../img/img-rodape/logo_rodape.png" 
           alt="Logo" 
           className="footer-logo" 
         />
