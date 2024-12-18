@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #324498; 
+    color: white;
+    padding: 260px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.footer-logo {
+    width: 100px; 
+    height: auto;
+    margin-top: -200px; 
+}
+
+.footer-texto {
+    font-family: 'Days One'; 
+    font-size: 40px;
+    margin-top: -200px; 
+}
+
+/* layout responsivo */
+@media (max-width: 750px) {
+    .footer {
+        flex-direction: row; 
+        text-align: left; 
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 8px; 
+    }
+}
+
