@@ -1,9 +1,9 @@
 import React from "react";
 import "./Parceiros.css"; 
-import evolua from "./img/evolua.png";
-import tambore from "./img/tambore.png";
-import redeXodo from "./img/rede-xodo.png";
-import ibiti from "./img/ibiti.png";
+import evolua from "../../img/img-parceiros/evolua.png";
+import tambore from "../../img/img-parceiros/tambore.png";
+import redeXodo from "../../img/img-parceiros/rede-xodo.png";
+import ibiti from "../../img/img-parceiros/ibiti.png";
 
 const Parceiros = () => {
   return (
