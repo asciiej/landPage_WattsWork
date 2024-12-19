@@ -9,6 +9,7 @@ import Parceiros from './components/Parceiros/Parceiros';
 import Garantia from './components/Garantia/Garantia'
 import NossasSolucoes from './components/NossasSolucoes/NossasSolucoes';
 import Rodape from './components/Rodape/Rodape';
+import Feedbacks from './components/Feedbacks/Feedbacks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <NossasSolucoes />
     <Dados />
     <NossaHistoria />
+    <Feedbacks />
     <Parceiros />
     <Garantia />
     <Rodape />
