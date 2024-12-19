@@ -5,21 +5,21 @@ import Banner from './components/Banner/Banner'; // Caminho para o componente Ba
 import Beneficios from './components/Beneficios/Beneficios';
 import Dados from './components/Dados/Dados';
 import NossaHistoria from './components/NossaHistoria/NossaHistoria'
-import Parceiros from './components/Parceiros/Parceiros';
-import Garantia from './components/Garantia/Garantia'
 import NossasSolucoes from './components/NossasSolucoes/NossasSolucoes';
-import Rodape from './components/Rodape/Rodape';
+import Contatos from './components/Contatos/Contatos';
+import Cabecalho from './components/Cabecalho/Cabecalho';
+import PerguntasFrequentes from './components/PerguntasFrequentes/PerguntasFrequentes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Cabecalho />
     <Banner />
     <Beneficios />
     <NossasSolucoes />
     <Dados />
     <NossaHistoria />
-    <Parceiros />
-    <Garantia />
-    <Rodape />
+    <PerguntasFrequentes />
+    <Contatos />
   </React.StrictMode>
 );
