@@ -6,7 +6,7 @@ import Beneficios from './components/Beneficios/Beneficios';
 import Dados from './components/Dados/Dados';
 import NossaHistoria from './components/NossaHistoria/NossaHistoria'
 import NossasSolucoes from './components/NossasSolucoes/NossasSolucoes';
-import Cabecalho from './components/Cabecalho/Cabecalho';
+import Cabecalho from './components/Cabecalho/Cabecalho'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
