@@ -30,10 +30,10 @@ function Cabecalho() {
 
       {/* Links de Navegação */}
       <nav className={`${styles.navLinks} ${menuAberto ? styles.show : ''}`}>
-        <a href="#sobre-nos">Sobre Nós</a>
-        <a href="#solucoes">Soluções</a>
+        <a href="#nossa-historia">Sobre Nós</a>
+        <a href="#nossas-solucoes">Soluções</a>
         <a href="#contato">Contato</a>
-        <a href="#duvidas">Dúvidas Frequentes</a>
+        <a href="#perguntas">Dúvidas Frequentes</a>
       </nav>
 
       {/* Ícones de Redes Sociais */}

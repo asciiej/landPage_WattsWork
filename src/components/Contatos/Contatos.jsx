@@ -7,7 +7,7 @@ import telefone from '../../img/img-contato/telefone.png';
 
 const Contato = () => {
   return (
-    <div className={styles.contato}>
+    <div className={styles.contato} id="contato">
       <h1>Ficou alguma dúvida?</h1>
         <div className={styles.containerContato}>
           {/* Coluna da esquerda (endereço) */}

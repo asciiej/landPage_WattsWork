@@ -6,7 +6,7 @@ import image2 from '../../img/img-historia/trabalhador.webp';
 
 export default function NossaHistoria() {
     return (
-        <div className={styles.historiaContainer}>
+        <div className={styles.historiaContainer} id="nossa-historia">
             <div className={styles.imagensContainer}>
                 <div className={`${styles.imagemContainer} ${styles.imagemMaior}`}> 
                     <img src={image1} alt=""/>

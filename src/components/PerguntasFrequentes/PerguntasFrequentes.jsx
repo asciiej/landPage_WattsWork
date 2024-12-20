@@ -41,7 +41,7 @@ function PerguntasFrequentes() {
   ];
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="perguntas">
       <h1>Perguntas <span>Frequentes</span></h1>
       <h2>Como podemos te ajudar hoje?</h2>
       <div className="faq-list">
