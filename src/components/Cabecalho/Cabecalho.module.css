@@ -1,0 +1,115 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 80px; 
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+.menu{
+  display: none;
+}
+.companyName {
+  font-size: 24px;
+  font-family: 'Days One', sans-serif;
+  
+  color: #333;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px; 
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  color: #364EB9;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #007BFF;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #007BFF;
+}
+
+@media (max-width: 768px) {
+  .companyName,
+  .navLnks,
+  .socialIcons {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: block; 
+    margin-left: auto;
+  }
+
+  .navLinks {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navLinks.show {
+    display: flex; 
+  }
+
+  .navLinks a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navLinks a:last-child {
+    border-bottom: none;
+  }
+}

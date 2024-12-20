@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cabecalho.css';
+import styles from './Cabecalho.module.css';
 import logoheader from '../../img/LogoHeader.png';
 import insta from '../../img/Logo Instagram.png';
 import youtube from '../../img/Logo YouTube.png';
@@ -9,17 +9,17 @@ import botao from '../../img/Button.png';
 
 function Cabecalho() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       {/* Logo e Nome */}
-      <div className="logo-container">
-        <img src={logoheader} alt="Logo da Empresa" className="logo" />
-        <h1 className="company-name">Wattworks</h1>
+      <div className={styles.logoContainer}>
+        <img src={logoheader} alt="Logo da Empresa" className={styles.logo} />
+        <h1 className={styles.companyName}>Wattworks</h1>
       </div>
-      <div className="menu" >
+      <div className={styles.menu} >
         <img src={botao} alt="botao menu" />
       </div>
       {/* Links de Navegação */}
-      <nav className="nav-links">
+      <nav className={styles.navLinks}>
         <a href="#sobre-nos">Sobre Nós</a>
         <a href="#solucoes">Soluções</a>
         <a href="#contato">Contato</a>
@@ -27,7 +27,7 @@ function Cabecalho() {
       </nav>
 
       {/* Ícones de Redes Sociais */}
-      <div className="social-icons">
+      <div className={styles.socialIcons}>
         <a href="https://www.instagram.com/wattworks.energia/?hl=pt-br" target="_blank" rel="noopener noreferrer">
           <img src={insta} alt="" />
           <i className="fa-brands fa-instagram"></i>
