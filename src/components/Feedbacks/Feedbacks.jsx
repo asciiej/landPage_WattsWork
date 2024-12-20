@@ -1,6 +1,10 @@
 import React from "react";
-import icon from "../../img/aspas.png"
 import styles from "./Feedbacks.module.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+
+import icon from "../../img/aspas.png"
 
 function Feedbacks() {
     return (
