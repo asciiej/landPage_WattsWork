@@ -10,6 +10,7 @@ import Cabecalho from './components/Cabecalho/Cabecalho';
 import Parceiros from './components/Parceiros/Parceiros';
 import Garantias from './components/Garantia/Garantia';
 import Rodape from './components/Rodape/Rodape';
+import Feedbacks from './components/Feedbacks/Feedbacks';
 import Contato from './components/Contatos/Contatos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
     <NossasSolucoes />
     <Dados />
     <NossaHistoria />
+    <Feedbacks />
     <Parceiros />
     <Garantias />
     <Contato />
