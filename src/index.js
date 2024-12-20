@@ -6,9 +6,7 @@ import Beneficios from './components/Beneficios/Beneficios';
 import Dados from './components/Dados/Dados';
 import NossaHistoria from './components/NossaHistoria/NossaHistoria'
 import NossasSolucoes from './components/NossasSolucoes/NossasSolucoes';
-import Contatos from './components/Contatos/Contatos';
 import Cabecalho from './components/Cabecalho/Cabecalho';
-import PerguntasFrequentes from './components/PerguntasFrequentes/PerguntasFrequentes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +17,5 @@ root.render(
     <NossasSolucoes />
     <Dados />
     <NossaHistoria />
-    <PerguntasFrequentes />
-    <Contatos />
   </React.StrictMode>
 );
