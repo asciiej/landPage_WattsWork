@@ -1,3 +1,4 @@
+/* Mantendo o estilo base */
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +26,11 @@
 
 .parceiros-lista {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid responsivo */
-    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr); 
     margin-top: 50px;
     justify-content: center;
     width: 100%;
+    gap: 15px; 
 }
 
 .fonte-titulo {
@@ -53,16 +54,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px; 
+    height: 80px; 
     border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .parceiros-logo img {
-    max-width: 100%;
-    max-height: 100%; 
+    max-width: 100%; 
+    max-height: 100%;
     object-fit: contain;
+    margin: 0 5px; 
 }
 
 /* Layout responsivo */
@@ -75,4 +78,23 @@
         font-size: 16px;     
     }
 
+    .parceiros-lista {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+    }
+
+    .parceiros-logo {
+        height: 70px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .parceiros-lista {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 10px; 
+    }
+
+    .parceiros-logo {
+        height: 60px; 
+    }
 }
