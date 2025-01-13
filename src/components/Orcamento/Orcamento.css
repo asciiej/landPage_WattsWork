@@ -190,6 +190,28 @@
     }
 }
 
+.input-with-icon {
+    position: relative;
+}
+
+
+.input-with-icon input {
+    width: 100%;
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+
+
 @media (max-width: 600px) {
     .orcamento-text h1 {
         font-size: 2rem;

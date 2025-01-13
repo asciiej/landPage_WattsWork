@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./Orcamento.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import emailjs from "@emailjs/browser";
 
 const Orcamento = () => {
-  // Estados para controle dos valores do formulário
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    countryCode: "+55",
     phone: "",
     message: "",
   });
 
-  // Função para manipular mudanças nos campos
+  // manipula as mudanças nos campos
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -22,13 +21,56 @@ const Orcamento = () => {
     }));
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // valida os campos
+    const { firstName, lastName, email, phone, message } = formData;
+    if (!firstName || !lastName || !email || !phone || !message) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const templateParams = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      message,
+    };
+
+    emailjs
+      .send(
+        "service_23ymibh",
+        "template_yuxmide",
+        templateParams,
+        "zCHoBkQe7c9pFQgwG"
+      )
+      .then(
+        (response) => {
+          alert("Formulário enviado com sucesso!");
+          console.log("SUCCESS!", response.status, response.text);
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        },
+        (error) => {
+          alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
+          console.error("FAILED...", error);
+        }
+      );
+  };
 
   return (
     <div className="orcamento-container">
-      {/* Texto do lado esquerdo */}
       <div className="orcamento-text">
         <h1>
-          Solicite agora o seu<br />
+          Solicite agora o seu
+          <br />
           orçamento <span className="highlight">gratuito</span>
         </h1>
         <p className="finan">
@@ -37,12 +79,13 @@ const Orcamento = () => {
         </p>
       </div>
 
-      {/* Formulário */}
       <div className="orcamento-form-container">
-        <form className="orcamento-form">
+        <form className="orcamento-form" onSubmit={sendEmail}>
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="firstName">Primeiro Nome <span className="form-asterisco">*</span></label>
+              <label htmlFor="firstName">
+                Primeiro Nome <span className="form-asterisco">*</span>
+              </label>
               <input
                 type="text"
                 id="firstName"
@@ -53,8 +96,11 @@ const Orcamento = () => {
                 required
               />
             </div>
+
             <div className="form-group">
-              <label htmlFor="lastName">Sobrenome <span className="form-asterisco">*</span></label>
+              <label htmlFor="lastName">
+                Sobrenome <span className="form-asterisco">*</span>
+              </label>
               <input
                 type="text"
                 id="lastName"
@@ -66,31 +112,30 @@ const Orcamento = () => {
               />
             </div>
           </div>
+
           <div className="form-group">
-            <label htmlFor="email">E-mail <span className="form-asterisco">*</span> </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="yourmail@gmail.com"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="telefone">Telefone <span className="form-asterisco">*</span> </label>
-            <div className="telefone-input">
-              <select
-                name="countryCode"
-                id="countryCode"
-                value={formData.countryCode}
+            <label htmlFor="email">
+              E-mail <span className="form-asterisco">*</span>
+            </label>
+            <div className="input-with-icon">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="yourmail@gmail.com"
+                value={formData.email}
                 onChange={handleChange}
-              >
-                <option value="+55"><i className="fas fa-flag" style={{ marginRight: '5px' }}></i>🇧🇷 +55</option>
-                <option value="+1"><i className="fas fa-flag" style={{ marginRight: '5px' }}></i>🇺🇸 +1</option>
-                <option value="+44"><i className="fas fa-flag" style={{ marginRight: '5px' }}></i>🇬🇧 +44</option>
-              </select>
+                required
+              />
+              <i className="fas fa-envelope"></i>
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="phone">
+              Telefone <span className="form-asterisco">*</span>
+            </label>
+            <div className="input-with-icon">
               <input
                 type="tel"
                 id="phone"
@@ -100,10 +145,14 @@ const Orcamento = () => {
                 onChange={handleChange}
                 required
               />
+              <i className="fas fa-phone"></i>
             </div>
           </div>
+
           <div className="form-group">
-            <label htmlFor="message">Mensagem <span className="form-asterisco">*</span></label>
+            <label htmlFor="message">
+              Mensagem <span className="form-asterisco">*</span>
+            </label>
             <textarea
               id="message"
               name="message"
