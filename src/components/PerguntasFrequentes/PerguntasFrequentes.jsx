@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import './PerguntasFrequentes.css';
-
+import styles from './PerguntasFrequentes.module.css';
 
 function PerguntasFrequentes() {
   
   const [openQuestion, setOpenQuestion] = useState(null);
 
-  
   const toggleQuestion = (index) => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
 
-  
   const faqData = [
     {
       question: "Depois de instalar minha usina fotovoltaica, eu ainda pago conta de energia?",
@@ -41,23 +38,25 @@ function PerguntasFrequentes() {
   ];
 
   return (
-    <div className="faq-container" id="perguntas">
-      <h1>Perguntas <span>Frequentes</span></h1>
-      <h2>Como podemos te ajudar hoje?</h2>
-      <div className="faq-list">
+    <div className={styles.faqContainer} id="perguntas">
+      <h1 className={styles.h1}>
+        Perguntas <span className={styles.h1Span}>Frequentes</span>
+      </h1>
+      <h2 className={styles.h2}>Como podemos te ajudar hoje?</h2>
+      <div className={styles.faqList}>
         {faqData.map((item, index) => (
-          <div key={index} className="faq-item">
+          <div key={index} className={styles.faqItem}>
             <button
-              className="faq-question"
+              className={styles.faqQuestion}
               onClick={() => toggleQuestion(index)}
             >
               {item.question}
-              <span className="faq-toggle">
+              <span className={styles.faqToggle}>
                 {openQuestion === index ? "-" : "+"}
               </span>
             </button>
             {openQuestion === index && (
-              <div className="faq-answer">{item.answer}</div>
+              <div className={styles.faqAnswer}>{item.answer}</div>
             )}
           </div>
         ))}
@@ -67,6 +66,3 @@ function PerguntasFrequentes() {
 }
 
 export default PerguntasFrequentes;
-
-
-

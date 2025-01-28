@@ -6,8 +6,7 @@
   text-align: center;
   font-family: var(--fonte-secundaria);
   font-size: 28px;
-  margin-bottom: 2rem;
-  padding: 40px;
+  margin-bottom: 48px;
   font-weight: normal;
 }
 
@@ -42,11 +41,16 @@
   justify-content: space-between;
 }
 
+.endereco {
+  min-width: 45%;
+}
+
 .contatoInfo {
   display: flex;
   flex-direction: column;
   gap: 48px;
   height: 100%;
+  min-width: 300px;
 }
 
 .enderecoTop {
@@ -107,5 +111,9 @@
     display: block; 
     text-align: center; 
     margin-bottom: 10px; 
+  }
+
+  .contato {
+    margin: 64px 36px;
   }
 }

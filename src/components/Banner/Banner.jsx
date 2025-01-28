@@ -47,7 +47,7 @@ function Banner() {
                                 <div className={styles.buttonsBanner}>
 
                                     <Link
-                                        to="###"  // ID do destino no componente NossasSolucoes
+                                        to="orcamento"  // ID do destino no componente Contato
                                         smooth={true}  // Ativa o efeito de scroll suave
                                         duration={500}  // Duração do efeito (em ms)
                                         className={styles.btnPrimaryBanner}

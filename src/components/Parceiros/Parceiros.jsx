@@ -14,7 +14,7 @@ const Parceiros = () => {
           Garantia de economia, <br/>segurança e sustentabilidade
         </h1>
         <h2>
-          Frase sobre como a empresa WattWorks é confiável e reconhecida pelos parceiros abaixo:
+          Confiança e qualidade reconhecidas por empresas como:
         </h2>
         <div className={styles.parceirosLista}>
           <div className={styles.parceirosLogo}>

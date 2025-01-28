@@ -12,6 +12,8 @@ import Garantias from './components/Garantia/Garantia';
 import Rodape from './components/Rodape/Rodape';
 import Feedbacks from './components/Feedbacks/Feedbacks';
 import Contato from './components/Contatos/Contatos';
+import Orcamento from './components/Orcamento/Orcamento';
+import PerguntasFrequentes from './components/PerguntasFrequentes/PerguntasFrequentes'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +26,8 @@ root.render(
     <NossaHistoria />
     <Feedbacks />
     <Parceiros />
+    <Orcamento />
+    <PerguntasFrequentes />
     <Garantias />
     <Contato />
     <Rodape />

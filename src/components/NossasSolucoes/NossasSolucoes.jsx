@@ -120,13 +120,10 @@ function NossasSolucoes() {
       )}
 
       <div className={styles.containerBotao}>
-        <Link
-          to="###" // ID do destino no componente NossasSolucoes
-          smooth={true} // Ativa o efeito de scroll suave
-          duration={500} // Duração do efeito (em ms)
+        <Link onClick={() => window.open('/docs/Portfolio Wattswork.pdf', '_blank')}
           className={styles.botao}
         >
-          Seja nosso cliente
+          Veja nosso portfolio
           <img src={setaBotao} alt="Botão" />
         </Link>
       </div>
