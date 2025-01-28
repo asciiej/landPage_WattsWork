@@ -73,10 +73,6 @@
 }
 /* MEDIA QUERIES - Ajustes para telas menores */
 @media (max-width: 768px) {
-    .garantiaContainer {
-        padding: 40px 10px; /* Reduz o espaçamento */
-    }
-
     .garantiaContainer h2 {
         font-size: 2rem; /* Reduz o tamanho do título */
     }
